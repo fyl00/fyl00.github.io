@@ -8,11 +8,14 @@
     
       <item>
         <title>又一次开始</title>
-        <description>&lt;p&gt;前段时间把 Linode 上的服务器关掉了，但是觉得还是要个博客，所以用 GitHub Pages 搭了一个，希望能持续下去。&lt;/p&gt;
+        <description>&lt;p&gt;个人博客这件事请，总得反反复复几次，有可能一直反反复复了，也有可能慢慢荒废。但管它呢，开博客这件事情的最重要的目的是纪录才对。上一个博客是搭在 Linode 上的，但是觉得只放个博客太浪费了，所以就退了，改用 jekyll 放在 GitHub Pages 了。&lt;/p&gt;
+
+&lt;p&gt;其实按自己的想法，更应该说成是个人网站，不过还早，至少等我第一个独立 iOS 应用发布再说。之前就先在这个博客里纪录一些自己的东西，主要写一些产品分析、电影观后感等等。&lt;/p&gt;
+
 </description>
         <pubDate>Sat, 20 Feb 2016 00:00:00 +0800</pubDate>
-        <link>http://blog.slowwalker.me/dairy/2016/02/20/welcome-to-my-blog/</link>
-        <guid isPermaLink="true">http://blog.slowwalker.me/dairy/2016/02/20/welcome-to-my-blog/</guid>
+        <link>http://blog.slowwalker.me/stuff/2016/02/20/welcome-to-my-blog/</link>
+        <guid isPermaLink="true">http://blog.slowwalker.me/stuff/2016/02/20/welcome-to-my-blog/</guid>
       </item>
     
   </channel>
