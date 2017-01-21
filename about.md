@@ -5,14 +5,17 @@ permalink: /about/
 tags: about
 ---
 
-很感谢你有兴趣来了解我:)
+嗨呀，这儿都被你发现了，你是对我感兴趣吗？
 
-想做产品狗，也想当程序猿。
-
-出没于[推特](http://twitter.com/fyl00)、[微博](http://weibo.com/fyl00)、[GitHub](https://github.com/fyl00)。
-
-正在修炼的技能:
+你是要招人的话，可以给你看看我的 [GitHub](https://github.com/fyl00)。
+然后我的技能树有:
 
 - Swift
 - Python
 - HTML\CSS\JavaScript
+
+如果你是想来交朋友的话，可以去我常出没的社交平台关注我:)
+
+- [推特](https://twitter.com/fyl00)
+- [微博](https://weibo.com/fyl00)
+- [Instagram](https://Instagram.com/fyl00)
