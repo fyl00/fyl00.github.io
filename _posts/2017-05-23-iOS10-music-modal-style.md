@@ -73,7 +73,32 @@ switch (self.transitionType) {
 
 这里提一句在使用 Swift 实现的时候，iOS10 上通过下拉手势关闭试图没成功的时候，`ModalViewController` 可能不会复原，这可能是苹果在 iOS10 改了 `UIView.animateTransition` 实现的原因，用 `UIViewPropertyAnimator` 的 `runningPropertyAnimator` 方法替代就可以了，在[之前的一篇博客](http://blog.slowwalker.me/ios/2017/02/16/iOS-UIViewPropertyAnimator-UIView.animate/)中提到过。
 
+到这儿基本是就完了，还有最后一点修饰工作，就是 StatusBar 的样式。其实设置起来不麻烦，在 `ModalViewController` 里如下设置即可：
+
+```Objective-C
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.modalPresentationCapturesStatusBarAppearance = YES;
+    // Do any additional setup after loading the view.
+    ...
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+```
+
+但在实际操作中遇到了一点麻烦，因为不知道什么时候把 `Info.plist` 里的 `UIViewControllerBasedStatusBarAppearance` 设置为 `NO` 了，所以一直没有成功，最后看到[这篇文章](http://www.splinter.com.au/2015/12/30/status-bar-colours/)才意识到问题。总结起来决定 StatusBar 样式的优先级依次是:
+
+```
+Info.plist > UINavigationController > Modal 中的 preferredStatusBarStyle
+```
+
 -----
 此文示例代码：[iOS10ModelPresent](https://github.com/fyl00/iOSDemo/tree/master/iOS10ModelPresent)
 
-参考链接：[Creating Custom UIViewController Transitions](https://www.raywenderlich.com/110536/custom-uiviewcontroller-transitions)
+参考链接：
+
+[Creating Custom UIViewController Transitions](https://www.raywenderlich.com/110536/custom-uiviewcontroller-transitions)
+
+[Status bar colours: Everything there is to know](http://www.splinter.com.au/2015/12/30/status-bar-colours/)
